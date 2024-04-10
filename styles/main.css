@@ -157,7 +157,20 @@ aside img {
 	max-width: 100%;
 	height: auto;
 }
+@media screen and (max-width: 150px) {
+	aside h2 a {
+		font-size: 85%; /* Decrease font size of <a> elements within <h2> elements in the aside */
+	}
 
+	section h1 {
+		font-size: 125%; /* Decrease font size of <h1> element in the section */
+	}
+
+	section h2,
+	aside h2 {
+		font-size: 110%; /* Decrease font size of <h2> elements in the section and aside */
+	}
+}
 /* the styles for the footer */
 footer {
 	background-color: #931420;
