@@ -157,12 +157,25 @@ aside img {
 	max-width: 100%;
 	height: auto;
 }
+#mobile_menu {
+	display: none;
+}
 @media screen and (max-width: 150px) {
 	header img {
 		float: none; /* Make header image not float */
 		margin: 0 auto; /* Center contents of header */
 	}
-
+	#nav_menu {
+		display: none;
+	}
+	/* Display mobile menu */
+	#mobile_menu {
+		display: block;
+	}
+	/* Set background color of mobile menu */
+	.slicknav_menu {
+		background-color: #800000 !important;
+	}
 	section,
 	aside {
 		float: none; /* Remove float from section and aside */
