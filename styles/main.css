@@ -158,17 +158,25 @@ aside img {
 	height: auto;
 }
 @media screen and (max-width: 150px) {
-	aside h2 a {
-		font-size: 85%; /* Decrease font size of <a> elements within <h2> elements in the aside */
+	header img {
+		float: none; /* Make header image not float */
+		margin: 0 auto; /* Center contents of header */
 	}
 
-	section h1 {
-		font-size: 125%; /* Decrease font size of <h1> element in the section */
+	section,
+	aside {
+		float: none; /* Remove float from section and aside */
+		width: calc(100% - 5%); /* Set width by subtracting left and right padding from 100% */
+		padding-right: 5%; /* Set right padding for aside to match left padding */
 	}
 
-	section h2,
-	aside h2 {
-		font-size: 110%; /* Decrease font size of <h2> elements in the section and aside */
+	article img {
+		max-width: 30%; /* Adjust maximum width of image in article */
+	}
+
+	/* Display speakers in two columns */
+	aside div {
+		column-count: 2;
 	}
 }
 /* the styles for the footer */
